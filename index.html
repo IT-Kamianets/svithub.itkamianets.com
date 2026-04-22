@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svit Hub - Хостел & Коворкінг у Кам'янці-Подільському</title>
+    <meta name="description" content="Сучасний хостел Svit Hub у центрі Кам'янця-Подільського. Комфортні ліжка, коворкінг, спільна кухня та дружня атмосфера.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                <img src="assets/logo.png" alt="Svit Hub Logo" style="height: 50px; object-fit: contain;">
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="ph ph-list"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="#about">Про нас</a>
+                <a href="#amenities">Зручності</a>
+                <a href="#accommodation">Проживання</a>
+                <a href="#contact">Контакти</a>
+            </nav>
+            <a href="https://www.booking.com/hotel/ua/svit-hub.uk.html" target="_blank" class="btn btn-primary d-none-mobile">Переглянути ціни</a>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <button class="close-menu-btn" aria-label="Close menu">
+                <i class="ph ph-x"></i>
+            </button>
+            <nav class="mobile-nav-links">
+                <a href="#about">Про нас</a>
+                <a href="#amenities">Зручності</a>
+                <a href="#accommodation">Проживання</a>
+                <a href="#contact">Контакти</a>
+                <a href="https://www.booking.com/hotel/ua/svit-hub.uk.html" target="_blank" class="btn btn-primary">Переглянути ціни</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="assets/hero.png?v=2" onerror="this.src='assets/svithub_hero_1776881927298.png'" alt="Svit Hub Lounge" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <span class="badge fade-up">Твій ідеальний простір</span>
+            <h1 class="fade-up delay-1"><span class="first-word">Відпочивай,</span><br>Працюй, Надихайся.</h1>
+            <div class="hero-actions fade-up delay-2">
+                <a href="https://www.booking.com/hotel/ua/svit-hub.uk.html" target="_blank" class="btn btn-primary btn-large">Забронювати ліжко</a>
+                <a href="#about" class="btn btn-secondary btn-large">Дізнатися більше</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text scroll-reveal left">
+                    <div class="section-badge">Про Svit Hub</div>
+                    <h2>Новий формат проживання<br>у Кам'янці-Подільському</h2>
+                    <p>Ми створили місце, де комфорт поєднується з продуктивністю. Svit Hub ідеально підходить для туристів, фрілансерів та тих, хто шукає нові знайомства.</p>
+                    <p>До ваших послуг не лише комфортні ліжка, але й повноцінна інфраструктура для життя: спільний лаунж, сучасна кухня, кав'ярня на території та навіть власна бібліотека.</p>
+                    
+                    <ul class="about-features">
+                        <li>
+                            <i class="ph-fill ph-map-pin"></i>
+                            <span>7 хвилин ходьби до центру міста</span>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-castle-turret"></i>
+                            <span>20 хвилин до Кам'янець-Подільської фортеці</span>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-coffee"></i>
+                            <span>Кав'ярня та коворкінг на території</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-images scroll-reveal right">
+                    <!-- Using the same hero img for placeholder, but visually styled differently -->
+                    <div class="img-wrapper main-img">
+                        <img src="assets/about.png?v=2" onerror="this.src='assets/svithub_hero_1776881927298.png'" alt="Svit Hub Coworking">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities section light-bg">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <div class="section-badge">Інфраструктура</div>
+                <h2>Все необхідне для вашого комфорту</h2>
+                <p>Ми подбали про те, щоб ваше перебування було максимально зручним</p>
+            </div>
+            
+            <div class="amenities-grid">
+                <div class="amenity-card scroll-reveal fade-up delay-1">
+                    <div class="amenity-icon"><i class="ph ph-wifi-high"></i></div>
+                    <h3>Безкоштовний Wi-Fi</h3>
+                    <p>Швидкісний інтернет на всій території для роботи та розваг.</p>
+                </div>
+                <div class="amenity-card scroll-reveal fade-up delay-2">
+                    <div class="amenity-icon"><i class="ph ph-armchair"></i></div>
+                    <h3>Спільний лаунж</h3>
+                    <p>Простора зона відпочинку з терасою та диванами.</p>
+                </div>
+                <div class="amenity-card scroll-reveal fade-up delay-3">
+                    <div class="amenity-icon"><i class="ph ph-cooking-pot"></i></div>
+                    <h3>Спільна кухня</h3>
+                    <p>Повністю обладнана кухня з обідньою зоною та мікрохвильовкою.</p>
+                </div>
+                <div class="amenity-card scroll-reveal fade-up delay-4">
+                    <div class="amenity-icon"><i class="ph ph-clock-user"></i></div>
+                    <h3>Стійка реєстрації 24/7</h3>
+                    <p>Завжди готові вам допомогти, незалежно від часу доби.</p>
+                </div>
+                <div class="amenity-card scroll-reveal fade-up delay-5">
+                    <div class="amenity-icon"><i class="ph ph-desktop"></i></div>
+                    <h3>Зона коворкінгу</h3>
+                    <p>Спеціально облаштовані робочі місця для тих, хто працює віддалено.</p>
+                </div>
+                <div class="amenity-card scroll-reveal fade-up delay-6">
+                    <div class="amenity-icon"><i class="ph ph-books"></i></div>
+                    <h3>Бібліотека та Дартс</h3>
+                    <p>Цікаві книги та ігри для розваг у вільний час.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Section -->
+    <section id="accommodation" class="accommodation section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <div class="section-badge">Бронювання</div>
+                <h2>Варіанти розміщення</h2>
+                <p>Обирайте зручне ліжко у наших сучасних загальних номерах</p>
+            </div>
+
+            <div class="rooms-container">
+                <!-- Room Card 1 -->
+                <div class="room-card scroll-reveal fade-up delay-1">
+                    <div class="room-img">
+                        <img src="assets/room1.jpg" onerror="this.src='assets/svithub_bunkbed_1776881940588.png'" alt="Болоки">
+                    </div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Двоярусне ліжко в змішаному загальному номері</h3>
+                            <span class="room-type">Гуртожиткового типу</span>
+                        </div>
+                        <div class="room-details">
+                            <span class="detail-item"><i class="ph ph-bed"></i> 1 ліжко</span>
+                            <span class="detail-item"><i class="ph ph-users"></i> Спільний номер</span>
+                        </div>
+                        <ul class="room-features">
+                            <li><i class="ph ph-check"></i> Індивідуальна розетка та освітлення</li>
+                            <li><i class="ph ph-check"></i> Шторка для приватності</li>
+                            <li><i class="ph ph-check"></i> Індивідуальна шафка (локер)</li>
+                            <li><i class="ph ph-check"></i> Спільна ванна кімната</li>
+                        </ul>
+                        <div class="room-footer">
+                            <a href="https://www.booking.com/hotel/ua/svit-hub.uk.html" target="_blank" class="btn btn-primary">Обрати</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 2 -->
+                <div class="room-card scroll-reveal fade-up delay-2">
+                    <div class="room-img">
+                        <img src="assets/room2.jpg" onerror="this.src='assets/svithub_bunkbed_1776881940588.png'" alt="Болоки 4-місний">
+                    </div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Ліжко в 4-місному номері</h3>
+                            <span class="room-type">Для осіб обох статей</span>
+                        </div>
+                        <div class="room-details">
+                            <span class="detail-item"><i class="ph ph-bed"></i> 1 ліжко</span>
+                            <span class="detail-item"><i class="ph ph-users"></i> До 4 гостей</span>
+                        </div>
+                        <ul class="room-features">
+                            <li><i class="ph ph-check"></i> Більше простору та затишку</li>
+                            <li><i class="ph ph-check"></i> Індивідуальна розетка та освітлення</li>
+                            <li><i class="ph ph-check"></i> Шторка для приватності</li>
+                            <li><i class="ph ph-check"></i> Спільна ванна кімната з феном</li>
+                        </ul>
+                        <div class="room-footer">
+                            <a href="https://www.booking.com/hotel/ua/svit-hub.uk.html" target="_blank" class="btn btn-primary">Обрати</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Card 3 -->
+                <div class="room-card scroll-reveal fade-up delay-3">
+                    <div class="room-img">
+                        <img src="assets/room3.jpg" onerror="this.src='assets/svithub_bunkbed_1776881940588.png'" alt="Болоки 10-місний">
+                    </div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Ліжко у 10-місному загальному номері</h3>
+                            <span class="room-type">Для чоловіків і жінок</span>
+                        </div>
+                        <div class="room-details">
+                            <span class="detail-item"><i class="ph ph-bed"></i> 1 ліжко</span>
+                            <span class="detail-item"><i class="ph ph-users"></i> До 10 гостей</span>
+                        </div>
+                        <ul class="room-features">
+                            <li><i class="ph ph-check"></i> Найкраща ціна</li>
+                            <li><i class="ph ph-check"></i> Індивідуальна розетка та освітлення</li>
+                            <li><i class="ph ph-check"></i> Великий простір для знайомств</li>
+                            <li><i class="ph ph-check"></i> Спільна ванна кімната</li>
+                        </ul>
+                        <div class="room-footer">
+                            <a href="https://www.booking.com/hotel/ua/svit-hub.uk.html" target="_blank" class="btn btn-primary">Обрати</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="contact" class="contact section light-bg">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info scroll-reveal left">
+                    <div class="section-badge">Контакти</div>
+                    <h2>Чекаємо на вас у Svit Hub</h2>
+                    <p>Зв'яжіться з нами для бронювання або якщо у вас виникли питання.</p>
+                    
+                    <div class="contact-list">
+                        <a href="tel:+380987206509" class="contact-item">
+                            <div class="contact-icon"><i class="ph ph-phone"></i></div>
+                            <div>
+                                <h4>Телефон</h4>
+                                <p>+38 (098) 720 65 09<br>+38 (067) 791 67 54</p>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="ph ph-map-pin"></i></div>
+                            <div>
+                                <h4>Адреса</h4>
+                                <p>вул. Лесі Українки, 79<br>Кам'янець-Подільський, Україна</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="ph ph-clock"></i></div>
+                            <div>
+                                <h4>Рецепція</h4>
+                                <p>Працюємо 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map scroll-reveal right">
+                    <!-- Google Maps Embed Placeholder -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2634.88179888057!2d26.583590474402786!3d48.66950325863222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4733b87c6cfdb58d%3A0x1bbe1924efd45138!2sSvitHub!5e0!3m2!1suk!2sua!4v1776884168295!5m2!1suk!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="assets/logo.png" alt="Svit Hub Logo" style="height: 60px; object-fit: contain; margin-bottom: 16px;">
+                <p>Ваш дім далеко від дому.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Svit Hub. Всі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
